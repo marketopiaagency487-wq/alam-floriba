@@ -15,7 +15,7 @@ const WA_TEXT = encodeURIComponent(
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_TEXT}`;
 /* TODO: حط الـ Web3Forms Access Key بتاعك هنا */
 const WEB3FORMS_KEY = "6a5fac9a-6757-47c9-ae6b-a38999b52033";
-const START_PRICE = "15,000,000";
+const START_PRICE = "15,600,000";
 
 /* الداتا */
 const HERO_STATS = [
@@ -48,7 +48,7 @@ const UNITS = [
   {
     t: "استوديوهات",
     d: "وحدات مدمجة بتصميم عملي، مثالية للاستثمار والإجازات القصيرة.",
-    p: "15 مليون جنيه",
+    p: "15.6 مليون جنيه",
   },
   {
     t: "الشقق السكنية",
@@ -63,13 +63,39 @@ const UNITS = [
   {
     t: "التاون هاوس والتوين هاوس",
     d: "وحدات سكنية متلاصقة أو مزدوجة، توازن بين المساحة الخاصة والقيمة الاستثمارية.",
-    p: "30 مليون جنيه",
+    p: "24.3 مليون جنيه",
   },
   {
     t: "الفلل المستقلة",
     d: "فلل مستقلة بخصوصية كاملة وحدائق خاصة، ضمن مواقع مميزة بالمخطط العام.",
-    p: "45 مليون جنيه",
+    p: "35.9 مليون جنيه",
   },
+];
+
+/* ─── قائمة أسعار SANDSIDE LAGOONS (استرشادية قبل الإطلاق الرسمي) ─── */
+const PRICE_LIST = [
+  { id: "sl-01", title: "شاليه علوي — غرفتان", bua: "—", land: "—", features: "غرفتان + غرفة مربية", price: "15,600,000" },
+  { id: "sl-02", title: "شاليه أرضي — غرفتان", bua: "—", land: "75 م² حديقة", features: "غرفتان + غرفة مربية", price: "18,800,000" },
+  { id: "sl-03", title: "توين شاليه — علوي", bua: "161 م²", land: "—", features: "4 غرف + غرفة مربية", price: "20,150,000" },
+  { id: "sl-04", title: "توين شاليه — أرضي", bua: "141 م²", land: "200 م² حديقة", features: "3 غرف + غرفة مربية", price: "20,700,000" },
+  { id: "sl-05", title: "توين شاليه — أرضي", bua: "161 م²", land: "200 م² حديقة", features: "4 غرف + غرفة مربية", price: "24,150,000" },
+  { id: "sl-06", title: "تاون هاوس", bua: "144 م²", land: "275 / 200 م²", features: "3 أجنحة", price: "24,300,000" },
+  { id: "sl-07", title: "تاون هاوس", bua: "180 م²", land: "275 / 200 م²", features: "4 أجنحة", price: "30,800,000" },
+  { id: "sl-08", title: "توين هاوس — كريستال لاجون", bua: "204 م²", land: "400 م²", features: "4 أجنحة", price: "35,500,000" },
+  { id: "sl-09", title: "فيلا كريستال لاجون", bua: "230 م²", land: "450 م²", features: "4 أجنحة", price: "35,900,000" },
+  { id: "sl-10", title: "فيلا الصف الثاني — Open Sea Lagoon", bua: "307 م²", land: "500 م²", features: "5 أجنحة، إطلالة جزئية على اللاجون", price: "49,700,000" },
+  { id: "sl-11", title: "فيلا كريستال لاجون", bua: "272 م²", land: "550 م²", features: "5 أجنحة", price: "55,000,000" },
+  { id: "sl-12", title: "فيلا مستقلة — لاجون فرونت", bua: "—", land: "500 م²", features: "5 أجنحة، إطلالة كاملة على اللاجون", price: "78,400,000" },
+];
+
+/* ─── جدية الحجز EOI ─── */
+const EOI_SEALINE = [
+  { rows: "الصف الأول حتى الخامس", amount: "1,000,000 جنيه" },
+  { rows: "الصف السادس حتى التاسع", amount: "500,000 جنيه" },
+];
+const EOI_SANDSIDE = [
+  { type: "ستاند الون · توين هاوس · تاون هاوس", amount: "250,000 جنيه" },
+  { type: "الشاليهات", amount: "100,000 جنيه" },
 ];
 
 const PARTNERS = [
@@ -93,7 +119,7 @@ const GALLERY = [
 const FAQ = [
   {
     q: "إزاي أعرف الأسعار الحالية وخطط السداد؟",
-    a: "الأسعار الاسترشادية تبدأ من 15 مليون جنيه. يؤكد فريق المبيعات الأسعار الحالية، أنواع الوحدات والمساحات، وخطط السداد والتوافر وفق الطرح المتاح وقت الاستفسار. سجّل بياناتك وهيتواصل معاك الفريق مباشرة.",
+    a: "الأسعار الاسترشادية لمرحلة Sandside Lagoons تبدأ من 15.6 مليون جنيه للشاليهات وتصل إلى 78.4 مليون جنيه للفلل المستقلة على اللاجون، ومبالغ جدية الحجز (EOI) تبدأ من 100 ألف جنيه للشاليهات ومليون جنيه لصفوف Sea Line الأمامية. سجّل بياناتك وهيتواصل معاك فريق المبيعات بالأسعار الحالية وخطط السداد.",
   },
   {
     q: "من هو المطور المسؤول عن المشروع؟",
@@ -144,14 +170,30 @@ function LeadForm({ id, withBudget = false }: { id: string; withBudget?: boolean
         <input id={`${id}-name`} name="name" type="text" required placeholder="اكتب اسمك" />
       </div>
       <div className="field">
-        <label htmlFor={`${id}-phone`}>رقم الموبايل</label>
+        <label htmlFor={`${id}-phone`}>رقم الموبايل (مصر أو الخليج)</label>
         <input
           id={`${id}-phone`}
           name="phone"
           type="tel"
           required
-          placeholder="01xxxxxxxxx"
-          pattern="01[0-9]{9}"
+          placeholder="01xxxxxxxxx أو +9665xxxxxxxx"
+          pattern="(01[0-9]{9}|\+?[0-9]{8,15})"
+          title="أدخل رقم مصري (01xxxxxxxxx) أو رقم دولي يبدأ بكود الدولة مثل +966 أو +971"
+          inputMode="tel"
+          dir="ltr"
+          style={{ textAlign: "right" }}
+        />
+      </div>
+      <div className="field">
+        <label htmlFor={`${id}-backup`}>رقم واتساب / رقم احتياطي (اختياري)</label>
+        <input
+          id={`${id}-backup`}
+          name="backup_phone"
+          type="tel"
+          placeholder="رقم آخر نقدر نوصلك عليه"
+          pattern="(01[0-9]{9}|\+?[0-9]{8,15})"
+          title="رقم مصري أو دولي يبدأ بكود الدولة"
+          inputMode="tel"
           dir="ltr"
           style={{ textAlign: "right" }}
         />
@@ -312,7 +354,7 @@ export default function Home() {
               <h2 className="section-title">مقياس مدينة، وترابط وجهة واحدة</h2>
               <p className="section-desc">
                 مشروع علم الروم باستثمارات تتجاوز 29.7 مليار دولار على 4,902 فدان، بشراكة الديار
-                القطرية وهيئة المجتمعات العمرانية الجديدة. الأسعار الاسترشادية تبدأ من 15 مليون
+                القطرية وهيئة المجتمعات العمرانية الجديدة. الأسعار الاسترشادية تبدأ من 15.6 مليون
                 جنيه — تواصل مع فريق المبيعات لمعرفة أحدث الأسعار وخطط السداد المتاحة وقت الاستفسار.
               </p>
             </div>
@@ -364,7 +406,7 @@ export default function Home() {
           <div className="section-inner">
             <div className="animate-in center">
               <span className="eyebrow">أنواع الوحدات والأسعار</span>
-              <h2 className="section-title">الأسعار تبدأ من 15 مليون جنيه</h2>
+              <h2 className="section-title">الأسعار تبدأ من 15.6 مليون جنيه</h2>
               <p className="section-desc" style={{ margin: "0 auto" }}>
                 تشكيلة متنوعة من الوحدات ضمن المخطط العام — أسعار استرشادية، يؤكدها فريق
                 المبيعات مع المساحات وخطط السداد وقت الاستفسار.
@@ -406,6 +448,61 @@ export default function Home() {
               جميع الأسعار المذكورة أسعار استرشادية وليست عرضاً رسمياً من المطور — التأكيد النهائي
               للأسعار والمساحات من فريق المبيعات وقت الاستفسار.
             </p>
+
+            {/* ── Sandside Lagoons price list ── */}
+            <div className="animate-in center" style={{ marginTop: 56 }} id="pricelist">
+              <span className="eyebrow">SANDSIDE LAGOONS</span>
+              <h2 className="section-title">قائمة أسعار ساند سايد لاجون</h2>
+              <p className="section-desc" style={{ margin: "0 auto" }}>
+                الأسعار المتداولة قبل الإطلاق الرسمي لمرحلة Sandside Lagoons — تبدأ من 15.6 مليون
+                جنيه للشاليهات. اطلب تفاصيل أي وحدة ويتواصل معك فريق المبيعات بأنظمة السداد فور صدورها.
+              </p>
+            </div>
+            <div className="pricelist-grid animate-in">
+              {PRICE_LIST.map((u) => (
+                <div key={u.id} className="price-card">
+                  <span className="price-tag">SANDSIDE LAGOONS</span>
+                  <h3>{u.title}</h3>
+                  <div className="spec-rows">
+                    <div className="spec-row"><span>المساحة المبنية</span><b>{u.bua}</b></div>
+                    <div className="spec-row"><span>مساحة الأرض</span><b>{u.land}</b></div>
+                    <div className="spec-row"><span>المميزات</span><b>{u.features}</b></div>
+                  </div>
+                  <div className="price-from">
+                    <span>السعر يبدأ من</span>
+                    <b>{u.price} <small>جنيه</small></b>
+                  </div>
+                  <a className="price-cta" href="#register">استعلم عن الوحدة ↖</a>
+                </div>
+              ))}
+            </div>
+
+            {/* ── EOI ── */}
+            <div className="animate-in center" style={{ marginTop: 56 }} id="eoi">
+              <span className="eyebrow">EOI · التسجيل المبكر</span>
+              <h2 className="section-title">مبالغ جدية الحجز (EOI)</h2>
+              <p className="section-desc" style={{ margin: "0 auto" }}>
+                الـ EOI (Expression of Interest) هو مبلغ جدية يضمن لك أولوية الاختيار عند فتح
+                باب الحجز الرسمي — الأسبقية في اختيار الوحدة تكون بترتيب التسجيل.
+              </p>
+            </div>
+            <div className="eoi-grid animate-in">
+              <div className="eoi-card">
+                <h3>مرحلة SEA LINE</h3>
+                {EOI_SEALINE.map((e) => (
+                  <div className="spec-row" key={e.rows}><span>{e.rows}</span><b>{e.amount}</b></div>
+                ))}
+              </div>
+              <div className="eoi-card">
+                <h3>مرحلة SANDSIDE LAGOON</h3>
+                {EOI_SANDSIDE.map((e) => (
+                  <div className="spec-row" key={e.type}><span>{e.type}</span><b>{e.amount}</b></div>
+                ))}
+              </div>
+            </div>
+            <div className="center animate-in" style={{ marginTop: 26 }}>
+              <a className="btn btn-gold" href="#register">سجّل اهتمامك قبل فتح الحجز</a>
+            </div>
           </div>
         </section>
 
