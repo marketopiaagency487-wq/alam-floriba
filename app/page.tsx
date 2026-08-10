@@ -14,7 +14,7 @@ const WA_TEXT = encodeURIComponent(
 );
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_TEXT}`;
 /* TODO: حط الـ Web3Forms Access Key بتاعك هنا */
-const WEB3FORMS_KEY = "6a5fac9a-6757-47c9-ae6b-a38999b52033";
+const WEB3FORMS_KEY = "373a3dea-9611-4fee-9635-b9287159540d";
 const START_PRICE = "15,600,000";
 
 /* الداتا */
