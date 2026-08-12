@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const WA_LINK =
-  "https://wa.me/201286679790?text=" +
+  "https://wa.me/201001050018?text=" +
   encodeURIComponent(
     "أريد الاستفسار عن مشروع علم الروم Alam Al Roum — الأسعار والوحدات المتاحة"
   );
