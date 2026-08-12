@@ -52,7 +52,7 @@ export default function PrivacyPage() {
       <h2>التواصل بخصوص الخصوصية</h2>
       <p>
         لأي استفسار متعلق بخصوصية بياناتك، تواصل معنا على{" "}
-        <a href="tel:+201286679790" style={{ color: "var(--gold)", fontWeight: 700 }}>01286679790</a>.
+        <a href="tel:+201001050018" style={{ color: "var(--gold)", fontWeight: 700 }}>01001050018</a>.
       </p>
 
       <a href="/" className="back-home">← الرجوع للصفحة الرئيسية</a>
