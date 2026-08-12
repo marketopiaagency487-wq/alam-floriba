@@ -39,7 +39,7 @@ export default function AboutPage() {
       <h2>تواصل معنا</h2>
       <p>
         للاستفسار أو طلب الأسعار، يمكنك التواصل عبر النموذج في الصفحة الرئيسية، أو الاتصال
-        المباشر على <a href="tel:+201286679790" style={{ color: "var(--gold)", fontWeight: 700 }}>01286679790</a>.
+        المباشر على <a href="tel:+201001050018" style={{ color: "var(--gold)", fontWeight: 700 }}>01001050018</a>.
       </p>
 
       <a href="/" className="back-home">← الرجوع للصفحة الرئيسية</a>
