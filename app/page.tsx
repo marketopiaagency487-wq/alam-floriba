@@ -6,9 +6,9 @@ import { trackFormLead, trackWhatsApp, trackCall } from "@/lib/tracking";
 /* ─────────────────────────────────────────────
    الثوابت — عدّل هنا فقط
    ───────────────────────────────────────────── */
-const PHONE_DISPLAY = "01286679790";
-const PHONE_INTL = "+201286679790";
-const WA_NUMBER = "201286679790";
+const PHONE_DISPLAY = "01001050018";
+const PHONE_INTL = "+201001050018";
+const WA_NUMBER = "201001050018";
 const WA_TEXT = encodeURIComponent(
   "أريد الاستفسار عن مشروع علم الروم Alam Al Roum — الأسعار والوحدات المتاحة"
 );
